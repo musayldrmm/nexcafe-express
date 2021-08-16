@@ -1,0 +1,463 @@
+//#315B81 isim şehir box bgrcolor
+
+body {
+  margin: 0;
+  background: #fff !important;
+  font-family: "PT Sans", sans-serif;
+  font-weight: normal;
+  box-sizing: border-box;
+  a {
+    text-decoration: none;
+  }
+}
+nav {
+  margin: 0 auto;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  box-icon {
+    display: none;
+  }
+
+  div.logo {
+    img {
+      height: 25px;
+      width: 100px;
+      display: block;
+      margin-top: 15px;
+      margin-left: 50px;
+    }
+  }
+
+  ul {
+    li {
+      display: inline-block;
+      margin-left: 1.5rem;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      i {
+        text-decoration: none;
+        color: black;
+        border-left: 1px solid #e2e2e2;
+        border-right: 1px solid #e2e2e2;
+        margin-right: 10px;
+      }
+      a {
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+.mainwrapper {
+  height: 1080px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    margin: 0 auto;
+    height: 1080px;
+    border-image-repeat: stretch;
+    .nescafe-container {
+      width: 1920px;
+      margin-top: 60px;
+      height: 1100px;
+      position: fixed;
+      background: url(/img/1.png);
+      background-size: contain;
+      background-position: center top;
+      background-repeat: no-repeat;
+      .selection {
+        width: 100%;
+        height: 100%;
+        margin-top: 180px;
+        margin-left: 680px;
+        font-family: PT Sans;
+        font-size: 19px;
+        font-weight: 400;
+        color: #1b5381;
+        .isim {
+          ::placeholder {
+            color: #b2ddf5;
+            font-size: 15px;
+          }
+          #name-input {
+            font-size: 15px;
+            padding-left: 10px;
+            margin-top: 10px;
+            background: #315b81;
+            width: 300px;
+            height: 40px;
+            border: 0;
+            border-radius: 45px;
+            box-shadow: none;
+            outline: none;
+            color: white;
+          }
+        }
+        .sehir {
+          margin-top: 15px;
+          select {
+            width: 300px;
+            height: 40px;
+            border-radius: 40px;
+            background: #315b81;
+            color: white;
+            font-size: 15px;
+          }
+        }
+        .ilerle-btn {
+          img {
+            height: 40px;
+            margin-top: 10px;
+            width: 300px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .nescafe-container-2 {
+      display: none;
+      position: fixed;
+      background: url(/img/2.png);
+      width: 1920px;
+      margin-top: 60px;
+      height: 1100px;
+      position: fixed;
+      background-size: contain;
+      background-position: center top;
+      background-repeat: no-repeat;
+      .question-container {
+        .question {
+          position: absolute;
+          left: 616px;
+          top: 150px;
+          img {
+            width: 550px;
+            height: 80px;
+          }
+        }
+        .answers {
+          position: absolute;
+          top: 60px;
+          margin-top: 180px;
+          margin-left: 680px;
+
+          .answer {
+            font-family: PT Sans;
+            font-size: 19px;
+            font-weight: 400;
+            background-color: #1b5381;
+            border-radius: 30px;
+            width: 430px;
+            height: 60px;
+            color: white;
+            margin-top: 10px;
+            text-align: center;
+            cursor: pointer;
+            line-height: 50px;
+          }
+        }
+      }
+    }
+    .nescafe-container-3 {
+      display: none;
+      position: fixed;
+      background: url(/img/3.png);
+      width: 1920px;
+      margin-top: 60px;
+      height: 1100px;
+      position: fixed;
+      background-size: contain;
+      background-position: center top;
+      background-repeat: no-repeat;
+      .question-container {
+        .question {
+          position: absolute;
+          left: 616px;
+          top: 150px;
+          img {
+            width: 550px;
+            height: 80px;
+          }
+        }
+        .answers {
+          position: absolute;
+          top: 60px;
+          margin-top: 180px;
+          margin-left: 680px;
+
+          .answer {
+            font-family: PT Sans;
+            font-size: 19px;
+            font-weight: 400;
+            background-color: #1b5381;
+            border-radius: 30px;
+            width: 400px;
+            height: 60px;
+            color: white;
+            justify-content: center;
+            margin-top: 10px;
+            text-align: center;
+            cursor: pointer;
+            line-height: 50px;
+          }
+        }
+      }
+    }
+    .nescafe-container-4 {
+      display: none;
+      position: fixed;
+      background: url(/img/2.png);
+      width: 1920px;
+      margin-top: 60px;
+      height: 1100px;
+      position: fixed;
+      background-size: contain;
+      background-position: center top;
+      background-repeat: no-repeat;
+      .question-container {
+        .question {
+          position: absolute;
+          left: 616px;
+          top: 150px;
+          img {
+            width: 550px;
+            height: 80px;
+          }
+        }
+        .answers {
+          position: absolute;
+          top: 60px;
+          margin-top: 180px;
+          margin-left: 680px;
+
+          .answer {
+            font-family: PT Sans;
+            font-size: 19px;
+            font-weight: 400;
+            background-color: #1b5381;
+            border-radius: 30px;
+            width: 400px;
+            height: 60px;
+            color: white;
+            justify-content: center;
+            margin-top: 10px;
+            text-align: center;
+            cursor: pointer;
+            line-height: 50px;
+          }
+        }
+      }
+    }
+    .nescafe-container-5 {
+      display: none;
+      position: fixed;
+      background: url(/img/fethiye.png);
+      width: 1920px;
+      margin-top: 60px;
+      height: 1100px;
+      position: fixed;
+      background-size: contain;
+      background-position: center top;
+      background-repeat: no-repeat;
+      .name-text {
+        width: 100%;
+        height: 133px;
+        margin-left: 35%;
+        line-height: 50px;
+        font-weight: bold;
+        font-size: 32px;
+        #text-1 {
+          color: #315b81;
+          font-size: 26px;
+          font-family: "PT Sans", sans-serif;
+          font-weight: bold;
+        }
+        #text-2 {
+          color: red;
+          font-weight: bold;
+        }
+        #text-3 {
+          color: #315b81;
+          font-size: 26px;
+          font-family: "PT Sans", sans-serif;
+          font-weight: bold;
+        }
+      }
+      .rota-text {
+        width: 100%;
+        height: 133px;
+        #text-4 {
+          font-family: "PT Sans", sans-serif;
+          text-align: left;
+          width: 265px;
+          color: #315b81;
+          font-weight: bold;
+          margin-top: 50px;
+          margin-left: 35%;
+          font-size: 14px;
+        }
+        #text-5 {
+          font-family: "PT Sans";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 11.5px;
+          line-height: 150%;
+          letter-spacing: 0.02em;
+          color: #315b81;
+          margin-top: 7px;
+          margin-left: 35%;
+        }
+      }
+      .video {
+        position: absolute;
+        top: 366px;
+        left: 940px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    height: 5px;
+    margin-left: 0px;
+    position: relative;
+    flex-direction: column;
+    .logo {
+      margin-left: 100px;
+    }
+    ul {
+      display: none;
+    }
+
+    ul.vitrin {
+      display: none;
+    }
+    ul.search-box {
+      display: none;
+    }
+    box-icon {
+      display: block !important;
+      position: absolute;
+      top: 12px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainwrapper {
+    height: 100%;
+    .container {
+      width: 100%;
+      height: 100%;
+      .nescafe-container {
+        background: url(/img/Frame.png);
+        background-color: #b2ddf5;
+        position: sticky;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 385px;
+        height: 100%;
+        .selection {
+          background-color: #b2ddf5;
+          height: 80%;
+          padding-top: 50px;
+          margin-left: 0px;
+        }
+      }
+      .nescafe-container-2 {
+        background: url(/img/soru-1-responsive-1.png);
+        background-color: #b2ddf5;
+        position: sticky;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 375px;
+        height: 100%;
+        .question-container {
+          .question {
+            display: none;
+          }
+          .answers {
+            margin-left: 5px;
+            margin-top: 45%;
+            .answer {
+              margin-left: 15px;
+              line-height: 20px;
+              font-size: 15px;
+              width: 300px;
+              height: 45px;
+            }
+          }
+        }
+      }
+      .nescafe-container-3 {
+        background: url(/img/soru-1-responsive-2.png);
+        background-color: #b2ddf5;
+        position: sticky;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 375px;
+        height: 100%;
+        .question-container {
+          .question {
+            display: none;
+          }
+          .answers {
+            margin-left: 15px;
+            margin-top: 95px;
+            .answer {
+              line-height: 20px;
+              font-size: 15px;
+              width: 300px;
+              height: 45px;
+            }
+          }
+        }
+      }
+      .nescafe-container-4 {
+        background: url(/img/soru-1-responsive-3.png);
+        background: url(/img/soru-1-responsive-2.png);
+        background-color: #b2ddf5;
+        position: sticky;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 375px;
+        height: 100%;
+        .question-container {
+          .question {
+            display: none;
+          }
+          .answers {
+            margin-left: 15px;
+            margin-top: 95px;
+            .answer {
+              line-height: 20px;
+              font-size: 15px;
+              width: 300px;
+              height: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
