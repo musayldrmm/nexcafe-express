@@ -4,6 +4,7 @@ var çeşme = 0;
 var çıralı = 0;
 var isim = "";
 var sehir = "";
+
 var çıralı_text = `<span style="color:red">JHHHGHHJKLJK,</span>  senin kafa dinleyip kamp yapmaya, doğayla iç içe olmaya ihtiyacın var dostum!
 `;
 var çıralı_text_2 = ` O yüzden rotanı Çıralı’ya çevirmelisin. Sakin ve mitolojik <br>
@@ -28,14 +29,12 @@ akşamları biraz takı toka bakarsın. E gitmişken de bir kumru patlatırsın!
 document.getElementById("ilerle").addEventListener("click", function () {
   isim = document.getElementById("name-input").value;
   sehir = document.getElementById("city").value;
-  if(isim!=""){
-    if(sehir!=""){
- document.getElementById("container-1").style.display = "none";
-  document.getElementById("container-2").style.display = "block";
+  if (isim != "") {
+    if (sehir != "") {
+      document.getElementById("container-1").style.display = "none";
+      document.getElementById("container-2").style.display = "block";
     }
-  }
-  else{
-
+  } else {
   }
 });
 document.getElementById("next-1").addEventListener("click", function () {
@@ -82,138 +81,121 @@ document.getElementById("next-9").addEventListener("click", function () {
   kaş = kaş + 1;
   document.getElementById("container-4").style.display = "none";
   document.getElementById("container-5").style.display = "block";
-  document.getElementById("text-1").innerHTML=isim+", Rotan:";
+  document.getElementById("text-1").innerHTML = isim + ", Rotan:";
+
   if (çeşme >= 2) {
     document.getElementById("container-5").style.background =
       "url(/img/çeşme.png)";
-      document.getElementById("text-4").innerHTML = çeşme_text;
-      document.getElementById("text-5").innerHTML = çeşme_text_2;
-      document.getElementById("text-2").innerHTML = "Çeşme";
-
-
+    document.getElementById("text-4").innerHTML = çeşme_text;
+    document.getElementById("text-5").innerHTML = çeşme_text_2;
+    document.getElementById("text-2").innerHTML = "Çeşme";
+    pointB = "çeşme";
   } else if (çıralı >= 2) {
-   
     document.getElementById("container-5").style.background =
       "url(/img/çıralı.png)";
-      document.getElementById("text-4").innerHTML = çıralı_text;
-      document.getElementById("text-5").innerHTML = çıralı_text_2;
-      document.getElementById("text-2").innerHTML = "Çıralı";
-
+    document.getElementById("text-4").innerHTML = çıralı_text;
+    document.getElementById("text-5").innerHTML = çıralı_text_2;
+    document.getElementById("text-2").innerHTML = "Çıralı";
+    pointB = "çıralı";
   } else if (fethiye >= 2) {
-    
     document.getElementById("container-5").style.background =
       "url(/img/fethiye.png)";
-      document.getElementById("text-4").innerHTML = fethiye_text;
-      document.getElementById("text-5").innerHTML = fethiye_text_2;
-      document.getElementById("text-2").innerHTML = "Fethiye";
-
+    document.getElementById("text-4").innerHTML = fethiye_text;
+    document.getElementById("text-5").innerHTML = fethiye_text_2;
+    document.getElementById("text-2").innerHTML = "Fethiye";
   } else if (kaş >= 2) {
-  
     document.getElementById("container-5").style.background =
       "url(/img/kaş.png)";
-      document.getElementById("text-4").innerHTML=kaş_text;
-      document.getElementById("text-5").innerHTML=kaş_text_2;
-      document.getElementById("text-2").innerHTML = "Kaş";
-
+    document.getElementById("text-4").innerHTML = kaş_text;
+    document.getElementById("text-5").innerHTML = kaş_text_2;
+    document.getElementById("text-2").innerHTML = "Kaş";
   } else {
-  
     document.getElementById("container-5").style.background =
       "url(/img/kaş.png)";
-      document.getElementById("text-4").innerHTML=kaş_text;
-      document.getElementById("text-5").innerHTML=kaş_text_2;
-      document.getElementById("text-2").innerHTML = "Kaş";
-
+    document.getElementById("text-4").innerHTML = kaş_text;
+    document.getElementById("text-5").innerHTML = kaş_text_2;
+    document.getElementById("text-2").innerHTML = "Kaş";
   }
 });
 document.getElementById("next-10").addEventListener("click", function () {
   fethiye = fethiye + 1;
   document.getElementById("container-4").style.display = "none";
   document.getElementById("container-5").style.display = "block";
-  document.getElementById("text-1").innerHTML=isim+", Rotan:";
+  document.getElementById("text-1").innerHTML = isim + ", Rotan:";
   if (çeşme >= 2) {
     document.getElementById("container-5").style.background =
       "url(/img/çeşme.png)";
     document.getElementById("text-4").innerHTML = çeşme_text;
     document.getElementById("text-5").innerHTML = çeşme_text_2;
     document.getElementById("text-2").innerHTML = "Çeşme";
-
   } else if (çıralı >= 2) {
     document.getElementById("container-5").style.background =
       "url(/img/çıralı.png)";
     document.getElementById("text-4").innerHTML = çıralı_text;
     document.getElementById("text-5").innerHTML = çıralı_text_2;
     document.getElementById("text-2").innerHTML = "Çıralı";
-
   } else if (fethiye >= 2) {
     document.getElementById("container-5").style.background =
       "url(/img/fethiye.png)";
     document.getElementById("text-4").innerHTML = fethiye_text;
     document.getElementById("text-5").innerHTML = fethiye_text_2;
     document.getElementById("text-2").innerHTML = "Fethiye";
-
   } else if (kaş >= 2) {
     document.getElementById("container-5").style.background =
       "url(/img/kaş.png)";
     document.getElementById("text-4").innerHTML = kaş_text;
     document.getElementById("text-5").innerHTML = kaş_text_2;
     document.getElementById("text-2").innerHTML = "Kaş";
-
   } else {
     document.getElementById("container-5").style.background =
       "url(/img/fethiye.png)";
     document.getElementById("text-4").innerHTML = fethiye_text;
     document.getElementById("text-5").innerHTML = fethiye_text_2;
     document.getElementById("text-2").innerHTML = "Fethiye";
-
   }
 });
 document.getElementById("next-11").addEventListener("click", function () {
   çeşme = çeşme + 1;
   document.getElementById("container-4").style.display = "none";
   document.getElementById("container-5").style.display = "block";
-  document.getElementById("text-1").innerHTML=isim+", Rotan:";
+  document.getElementById("text-1").innerHTML = isim + ", Rotan:";
   if (çeşme >= 2) {
     document.getElementById("container-5").style.background =
       "url(/img/çeşme.png)";
     document.getElementById("text-4").innerHTML = çeşme_text;
     document.getElementById("text-5").innerHTML = çeşme_text_2;
     document.getElementById("text-2").innerHTML = "Çeşme";
-
   } else if (çıralı >= 2) {
     document.getElementById("container-5").style.background =
       "url(/img/çıralı.png)";
     document.getElementById("text-4").innerHTML = çıralı_text;
     document.getElementById("text-5").innerHTML = çıralı_text_2;
     document.getElementById("text-2").innerHTML = "Çıralı";
-
   } else if (fethiye >= 2) {
     document.getElementById("container-5").style.background =
       "url(/img/fethiye.png)";
     document.getElementById("text-4").innerHTML = fethiye_text;
     document.getElementById("text-5").innerHTML = fethiye_text_2;
     document.getElementById("text-2").innerHTML = "Fethiye";
-
   } else if (kaş >= 2) {
     document.getElementById("container-5").style.background =
       "url(/img/kaş.png)";
     document.getElementById("text-4").innerHTML = kaş_text;
     document.getElementById("text-5").innerHTML = kaş_text_2;
     document.getElementById("text-2").innerHTML = "Kaş";
-
   } else {
     document.getElementById("container-5").style.background =
       "url(/img/çeşme.png)";
     document.getElementById("text-4").innerHTML = çeşme_text;
     document.getElementById("text-5").innerHTML = çeşme_text_2;
     document.getElementById("text-2").innerHTML = "Çeşme";
-
   }
 });
 document.getElementById("next-12").addEventListener("click", function () {
   çıralı = çıralı + 1;
   document.getElementById("container-4").style.display = "none";
   document.getElementById("container-5").style.display = "block";
-  document.getElementById("text-1").innerHTML=isim+", Rotan:";
+  document.getElementById("text-1").innerHTML = isim + ", Rotan:";
   if (çeşme >= 2) {
     document.getElementById("container-5").style.background =
       "url(/img/çeşme.png)";
@@ -226,27 +208,23 @@ document.getElementById("next-12").addEventListener("click", function () {
     document.getElementById("text-4").innerHTML = çıralı_text;
     document.getElementById("text-5").innerHTML = çıralı_text_2;
     document.getElementById("text-2").innerHTML = "Çıralı";
-
   } else if (fethiye >= 2) {
     document.getElementById("container-5").style.background =
       "url(/img/fethiye.png)";
     document.getElementById("text-4").innerHTML = fethiye_text;
     document.getElementById("text-5").innerHTML = fethiye_text_2;
     document.getElementById("text-2").innerHTML = "Fethiye";
-
   } else if (kaş >= 2) {
     document.getElementById("container-5").style.background =
       "url(/img/kaş.png)";
     document.getElementById("text-4").innerHTML = kaş_text;
     document.getElementById("text-5").innerHTML = kaş_text_2;
     document.getElementById("text-2").innerHTML = "Kaş";
-
   } else {
     document.getElementById("container-5").style.background =
       "url(/img/çıralı.png)";
     document.getElementById("text-4").innerHTML = çıralı_text;
     document.getElementById("text-5").innerHTML = çıralı_text_2;
     document.getElementById("text-2").innerHTML = "Çıralı";
-
   }
 });
