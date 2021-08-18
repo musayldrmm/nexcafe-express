@@ -72,6 +72,9 @@ nav {
     margin: 0 auto;
     height: 1080px;
     border-image-repeat: stretch;
+    #ice-1{
+      display: none;
+    }
     .nescafe-container {
       width: 1920px;
       margin-top: 60px;
@@ -118,6 +121,7 @@ nav {
             background: #315b81;
             color: white;
             font-size: 15px;
+              padding: 5px;
           }
         }
         .ilerle-btn {
@@ -384,6 +388,7 @@ nav {
     .container {
       width: 100%;
       height: 100%;
+   
       .nescafe-container {
         background: url(/img/Frame.png);
         background-color: #b2ddf5;
@@ -394,12 +399,15 @@ nav {
         width: 385px;
         height: 100%;
         margin-top: 100px;
+     
+
         .selection {
           background-color: #b2ddf5;
           height: 80%;
           padding-top: 50px;
-          margin-left: 5px;
-        }
+          margin-top: 200;
+          margin-left: 1px;
+        }  
       }
       .nescafe-container-2 {
         background: url(/img/soru-1-responsive-1.png);
@@ -527,6 +535,10 @@ nav {
   margin-top: auto;
   margin-left: 0;
   text-align: center;
+}
+#rota{
+  bottom: 390px;
+  right: 130px;
 }
       }
     }

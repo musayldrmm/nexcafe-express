@@ -87,6 +87,10 @@ nav ul li a img {
   border-image-repeat: stretch;
 }
 
+.mainwrapper .container #ice-1 {
+  display: none;
+}
+
 .mainwrapper .container .nescafe-container {
   width: 1920px;
   margin-top: 60px;
@@ -155,6 +159,7 @@ nav ul li a img {
   background: #315b81;
   color: white;
   font-size: 15px;
+  padding: 5px;
 }
 
 .mainwrapper .container .nescafe-container .selection .ilerle-btn img {
@@ -457,7 +462,8 @@ nav ul li a img {
     background-color: #b2ddf5;
     height: 80%;
     padding-top: 50px;
-    margin-left: 5px;
+    margin-top: 200;
+    margin-left: 1px;
   }
   .mainwrapper .container .nescafe-container-2 {
     background: url(/img/soru-1-responsive-1.png);
@@ -583,6 +589,10 @@ nav ul li a img {
     margin-top: auto;
     margin-left: 0;
     text-align: center;
+  }
+  .mainwrapper .container .nescafe-container-5 #rota {
+    bottom: 390px;
+    right: 130px;
   }
 }
 /*# sourceMappingURL=final-css.css.map */
