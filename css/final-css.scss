@@ -279,7 +279,7 @@ nav {
     #map{
       width: 258px;
       height: 141px;
-      margin-top: -217px;
+      margin-top: -260px;
     margin-left: 946px;
       border: 4px solid #fff;
       border-radius: 18px;
@@ -288,7 +288,7 @@ nav {
         width: 100%;
         height: 133px;
         margin-left: 35%;
-        line-height: 50px;
+        line-height: 60px;
         font-weight: bold;
         font-size: 32px;
         #text-1 {
@@ -317,7 +317,7 @@ nav {
           width: 265px;
           color: #315b81;
           font-weight: bold;
-          margin-top: 50px;
+          margin-top: 70px;
           margin-left: 35%;
           font-size: 14px;
         }
@@ -338,6 +338,15 @@ nav {
         top: 366px;
         left: 940px;
       }
+      #rota{
+        position: absolute;
+        right: 750px;
+        cursor: pointer;
+        img{
+          height: 32px;
+          width: 150px;
+        }
+      }
     }
   }
 }
@@ -349,6 +358,7 @@ nav {
     position: relative;
     flex-direction: column;
     .logo {
+      margin-top: 50px;
       margin-left: 100px;
     }
     ul {
@@ -379,15 +389,16 @@ nav {
         background-color: #b2ddf5;
         position: sticky;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 480 820px;
         background-position: center;
         width: 385px;
         height: 100%;
+        margin-top: 100px;
         .selection {
           background-color: #b2ddf5;
           height: 80%;
           padding-top: 50px;
-          margin-left: 0px;
+          margin-left: 5px;
         }
       }
       .nescafe-container-2 {
@@ -430,8 +441,8 @@ nav {
             display: none;
           }
           .answers {
-            margin-left: 15px;
-            margin-top: 95px;
+            margin-left: 35px;
+            margin-top: 151px;
             .answer {
               line-height: 20px;
               font-size: 15px;
@@ -456,8 +467,8 @@ nav {
             display: none;
           }
           .answers {
-            margin-left: 15px;
-            margin-top: 95px;
+            margin-left: 35px;
+            margin-top: 151px;
             .answer {
               line-height: 20px;
               font-size: 15px;
@@ -466,6 +477,57 @@ nav {
             }
           }
         }
+      }
+      .nescafe-container-5{
+      background: #b2ddf5 !important;
+      position: sticky;
+      .name-text {
+        width: 100%;
+        height: 120px;
+        margin-left: 0;
+        line-height: 40px;
+        font-weight: bold;
+        font-size: 26px;
+        background: white;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .video {
+      position: absolute;
+      top: 320px;
+    left: 40px;
+  
+  }
+ #map {
+    width: 258px;
+    height: 141px;
+    margin-top: 250px;
+    margin-left: 30px;
+    border: 4px solid #fff;
+    border-radius: 18px;
+}
+.rota-text #text-4 {
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  width: 265px;
+  color: #315b81;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.rota-text #text-5 {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13.5px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #315b81;
+  margin-top: auto;
+  margin-left: 0;
+  text-align: center;
+}
       }
     }
   }
